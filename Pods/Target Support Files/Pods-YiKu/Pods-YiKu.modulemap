@@ -1,0 +1,6 @@
+framework module Pods_YiKu {
+  umbrella header "Pods-YiKu-umbrella.h"
+
+  export *
+  module * { export * }
+}
