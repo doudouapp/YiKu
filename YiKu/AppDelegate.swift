@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -15,7 +14,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        AVOSCloud.setApplicationId("cyk2KDsHywQ7VjbYGaxOdFQI-gzGzoHsz", clientKey: "gGCz2a30c14WMXbwRdultk9i")
+        AVAnalytics.trackAppOpened(launchOptions: launchOptions)
         return true
     }
 

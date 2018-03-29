@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		16088C11206B57F500E8A7D2 /* YKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16088C10206B57F500E8A7D2 /* YKLoginViewController.swift */; };
+		16088C13206B580300E8A7D2 /* YKSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16088C12206B580300E8A7D2 /* YKSignUpViewController.swift */; };
+		16088C15206B586900E8A7D2 /* YKPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16088C14206B586900E8A7D2 /* YKPasswordViewController.swift */; };
 		16A64042206A07B0000A5B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A64041206A07B0000A5B91 /* AppDelegate.swift */; };
-		16A64044206A07B0000A5B91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A64043206A07B0000A5B91 /* ViewController.swift */; };
 		16A64047206A07B0000A5B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A64045206A07B0000A5B91 /* Main.storyboard */; };
 		16A64049206A07B0000A5B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A64048206A07B0000A5B91 /* Assets.xcassets */; };
 		16A6404C206A07B0000A5B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A6404A206A07B0000A5B91 /* LaunchScreen.storyboard */; };
@@ -35,9 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16088C10206B57F500E8A7D2 /* YKLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKLoginViewController.swift; sourceTree = "<group>"; };
+		16088C12206B580300E8A7D2 /* YKSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKSignUpViewController.swift; sourceTree = "<group>"; };
+		16088C14206B586900E8A7D2 /* YKPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKPasswordViewController.swift; sourceTree = "<group>"; };
 		16A6403E206A07B0000A5B91 /* YiKu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiKu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A64041206A07B0000A5B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		16A64043206A07B0000A5B91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		16A64046206A07B0000A5B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		16A64048206A07B0000A5B91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		16A6404B206A07B0000A5B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +52,7 @@
 		16A6405D206A07B1000A5B91 /* YiKuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YiKuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A64061206A07B1000A5B91 /* YiKuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiKuUITests.swift; sourceTree = "<group>"; };
 		16A64063206A07B1000A5B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16A6406F206A10C9000A5B91 /* YiKu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YiKu-Bridging-Header.h"; sourceTree = "<group>"; };
 		D29461077CCCAFC6FEB33656 /* Pods-YiKu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiKu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiKu/Pods-YiKu.debug.xcconfig"; sourceTree = "<group>"; };
 		D619FCFD7FD62F7C2171B0A3 /* Pods-YiKu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiKu.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiKu/Pods-YiKu.release.xcconfig"; sourceTree = "<group>"; };
 		FBA1EF03F29A770418D73C87 /* Pods_YiKu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiKu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +84,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16088C0F206B57C500E8A7D2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				16088C10206B57F500E8A7D2 /* YKLoginViewController.swift */,
+				16088C12206B580300E8A7D2 /* YKSignUpViewController.swift */,
+				16088C14206B586900E8A7D2 /* YKPasswordViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		16A64035206A07B0000A5B91 = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +119,13 @@
 		16A64040206A07B0000A5B91 /* YiKu */ = {
 			isa = PBXGroup;
 			children = (
+				16088C0F206B57C500E8A7D2 /* Login */,
 				16A64041206A07B0000A5B91 /* AppDelegate.swift */,
-				16A64043206A07B0000A5B91 /* ViewController.swift */,
 				16A64045206A07B0000A5B91 /* Main.storyboard */,
 				16A64048206A07B0000A5B91 /* Assets.xcassets */,
 				16A6404A206A07B0000A5B91 /* LaunchScreen.storyboard */,
 				16A6404D206A07B0000A5B91 /* Info.plist */,
+				16A6406F206A10C9000A5B91 /* YiKu-Bridging-Header.h */,
 			);
 			path = YiKu;
 			sourceTree = "<group>";
@@ -220,6 +236,7 @@
 				TargetAttributes = {
 					16A6403D206A07B0000A5B91 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Manual;
 					};
 					16A64051206A07B1000A5B91 = {
@@ -342,8 +359,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A64044206A07B0000A5B91 /* ViewController.swift in Sources */,
+				16088C13206B580300E8A7D2 /* YKSignUpViewController.swift in Sources */,
+				16088C11206B57F500E8A7D2 /* YKLoginViewController.swift in Sources */,
 				16A64042206A07B0000A5B91 /* AppDelegate.swift in Sources */,
+				16088C15206B586900E8A7D2 /* YKPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +529,7 @@
 			baseConfigurationReference = D29461077CCCAFC6FEB33656 /* Pods-YiKu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YiKu/Info.plist;
@@ -518,6 +538,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangshuai.YiKu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "YiKu/YiKu-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -528,6 +550,7 @@
 			baseConfigurationReference = D619FCFD7FD62F7C2171B0A3 /* Pods-YiKu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = YiKu/Info.plist;
@@ -536,6 +559,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dangshuai.YiKu;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "YiKu/YiKu-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
