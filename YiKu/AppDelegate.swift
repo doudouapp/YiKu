@@ -12,11 +12,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         AVOSCloud.setApplicationId("cyk2KDsHywQ7VjbYGaxOdFQI-gzGzoHsz", clientKey: "gGCz2a30c14WMXbwRdultk9i")
         AVAnalytics.trackAppOpened(launchOptions: launchOptions)
+        login()
         return true
+    }
+    
+    func login() {
+        let username:String? = UserDefaults.standard.string(forKey: "username")
+        if username != nil {
+            let storyboard :UIStoryboard = UIStoryboard(name: "Main", bundle : nil)
+            let tabBar = storyboard.instantiateViewController(withIdentifier: "TabBar")
+            window?.rootViewController = tabBar
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

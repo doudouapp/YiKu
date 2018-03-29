@@ -10,6 +10,7 @@ import UIKit
 
 class YKSignUpViewController: UIViewController {
 
+    
     @IBOutlet weak var usernameText: UITextField!
     @IBOutlet weak var psdText: UITextField!
     
@@ -44,20 +45,21 @@ class YKSignUpViewController: UIViewController {
     @IBAction func signupButtonClick(_ sender: UIButton) {
         hideKeyboardTap()
         print(infoDictionary)
-        let tel  = infoDictionary[1000]
+        let name = infoDictionary[1000]
         let pwd  = infoDictionary[2000]
-        let name = infoDictionary[3000]
-        guard tel?.count != 0 else { showAlert(msg: "填写手机号"); return }
-        guard pwd?.count != 0 else { showAlert(msg: "填写密码");   return }
+        
         guard name?.count != 0 else { showAlert(msg: "填写昵称");   return }
+        guard pwd?.count != 0 else { showAlert(msg: "填写密码");   return }
+        
         
         let user = AVUser()
         user.password = pwd
         user.username = name
-        user["tel"] = tel
         user.signUpInBackground { (succecss: Bool, error : Error?) in
             if succecss {
                 self.showAlert(msg: "注册成功")
+                UserDefaults.standard.set(name, forKey: "username")
+                UserDefaults.standard.synchronize()
             } else {
                 self.showAlert(msg: (error?.localizedDescription)!)
             }
