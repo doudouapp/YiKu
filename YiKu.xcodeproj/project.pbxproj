@@ -10,12 +10,18 @@
 		16088C11206B57F500E8A7D2 /* YKLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16088C10206B57F500E8A7D2 /* YKLoginViewController.swift */; };
 		16088C13206B580300E8A7D2 /* YKSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16088C12206B580300E8A7D2 /* YKSignUpViewController.swift */; };
 		16088C15206B586900E8A7D2 /* YKPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16088C14206B586900E8A7D2 /* YKPasswordViewController.swift */; };
+		169F8FA9207340C900F0AC42 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169F8FA8207340C900F0AC42 /* Home.storyboard */; };
+		169F8FAB2073410300F0AC42 /* UserCenter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169F8FAA2073410300F0AC42 /* UserCenter.storyboard */; };
+		169F8FAD2073415500F0AC42 /* YKHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F8FAC2073415500F0AC42 /* YKHomeViewController.swift */; };
+		169F8FAF2073425200F0AC42 /* YKUserCenterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169F8FAE2073425200F0AC42 /* YKUserCenterViewController.swift */; };
 		16A64042206A07B0000A5B91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A64041206A07B0000A5B91 /* AppDelegate.swift */; };
 		16A64047206A07B0000A5B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A64045206A07B0000A5B91 /* Main.storyboard */; };
 		16A64049206A07B0000A5B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16A64048206A07B0000A5B91 /* Assets.xcassets */; };
 		16A6404C206A07B0000A5B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A6404A206A07B0000A5B91 /* LaunchScreen.storyboard */; };
 		16A64057206A07B1000A5B91 /* YiKuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A64056206A07B1000A5B91 /* YiKuTests.swift */; };
 		16A64062206A07B1000A5B91 /* YiKuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A64061206A07B1000A5B91 /* YiKuUITests.swift */; };
+		64454A7B20A5735600469B4C /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64454A7A20A5735600469B4C /* Camera.storyboard */; };
+		64454A7D20A573E700469B4C /* YKCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64454A7C20A573E700469B4C /* YKCameraViewController.swift */; };
 		E24F33541D2DCB0CF164CFF6 /* Pods_YiKu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA1EF03F29A770418D73C87 /* Pods_YiKu.framework */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +46,10 @@
 		16088C10206B57F500E8A7D2 /* YKLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKLoginViewController.swift; sourceTree = "<group>"; };
 		16088C12206B580300E8A7D2 /* YKSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKSignUpViewController.swift; sourceTree = "<group>"; };
 		16088C14206B586900E8A7D2 /* YKPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKPasswordViewController.swift; sourceTree = "<group>"; };
+		169F8FA8207340C900F0AC42 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		169F8FAA2073410300F0AC42 /* UserCenter.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserCenter.storyboard; sourceTree = "<group>"; };
+		169F8FAC2073415500F0AC42 /* YKHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKHomeViewController.swift; sourceTree = "<group>"; };
+		169F8FAE2073425200F0AC42 /* YKUserCenterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKUserCenterViewController.swift; sourceTree = "<group>"; };
 		16A6403E206A07B0000A5B91 /* YiKu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YiKu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		16A64041206A07B0000A5B91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		16A64046206A07B0000A5B91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +63,8 @@
 		16A64061206A07B1000A5B91 /* YiKuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiKuUITests.swift; sourceTree = "<group>"; };
 		16A64063206A07B1000A5B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16A6406F206A10C9000A5B91 /* YiKu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YiKu-Bridging-Header.h"; sourceTree = "<group>"; };
+		64454A7A20A5735600469B4C /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		64454A7C20A573E700469B4C /* YKCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKCameraViewController.swift; sourceTree = "<group>"; };
 		D29461077CCCAFC6FEB33656 /* Pods-YiKu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiKu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiKu/Pods-YiKu.debug.xcconfig"; sourceTree = "<group>"; };
 		D619FCFD7FD62F7C2171B0A3 /* Pods-YiKu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiKu.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiKu/Pods-YiKu.release.xcconfig"; sourceTree = "<group>"; };
 		FBA1EF03F29A770418D73C87 /* Pods_YiKu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiKu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +106,24 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		169F8FA62073408200F0AC42 /* UserCenter */ = {
+			isa = PBXGroup;
+			children = (
+				169F8FAA2073410300F0AC42 /* UserCenter.storyboard */,
+				169F8FAE2073425200F0AC42 /* YKUserCenterViewController.swift */,
+			);
+			path = UserCenter;
+			sourceTree = "<group>";
+		};
+		169F8FA72073409B00F0AC42 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				169F8FA8207340C900F0AC42 /* Home.storyboard */,
+				169F8FAC2073415500F0AC42 /* YKHomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		16A64035206A07B0000A5B91 = {
 			isa = PBXGroup;
 			children = (
@@ -119,7 +149,10 @@
 		16A64040206A07B0000A5B91 /* YiKu */ = {
 			isa = PBXGroup;
 			children = (
+				64454A7520A56F2400469B4C /* Camera */,
 				16088C0F206B57C500E8A7D2 /* Login */,
+				169F8FA62073408200F0AC42 /* UserCenter */,
+				169F8FA72073409B00F0AC42 /* Home */,
 				16A64041206A07B0000A5B91 /* AppDelegate.swift */,
 				16A64045206A07B0000A5B91 /* Main.storyboard */,
 				16A64048206A07B0000A5B91 /* Assets.xcassets */,
@@ -146,6 +179,15 @@
 				16A64063206A07B1000A5B91 /* Info.plist */,
 			);
 			path = YiKuUITests;
+			sourceTree = "<group>";
+		};
+		64454A7520A56F2400469B4C /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				64454A7A20A5735600469B4C /* Camera.storyboard */,
+				64454A7C20A573E700469B4C /* YKCameraViewController.swift */,
+			);
+			path = Camera;
 			sourceTree = "<group>";
 		};
 		786ACF7BCAFB35A9EB08BF35 /* Pods */ = {
@@ -276,9 +318,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169F8FAB2073410300F0AC42 /* UserCenter.storyboard in Resources */,
+				64454A7B20A5735600469B4C /* Camera.storyboard in Resources */,
 				16A6404C206A07B0000A5B91 /* LaunchScreen.storyboard in Resources */,
 				16A64049206A07B0000A5B91 /* Assets.xcassets in Resources */,
 				16A64047206A07B0000A5B91 /* Main.storyboard in Resources */,
+				169F8FA9207340C900F0AC42 /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,10 +404,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169F8FAF2073425200F0AC42 /* YKUserCenterViewController.swift in Sources */,
 				16088C13206B580300E8A7D2 /* YKSignUpViewController.swift in Sources */,
 				16088C11206B57F500E8A7D2 /* YKLoginViewController.swift in Sources */,
 				16A64042206A07B0000A5B91 /* AppDelegate.swift in Sources */,
+				169F8FAD2073415500F0AC42 /* YKHomeViewController.swift in Sources */,
 				16088C15206B586900E8A7D2 /* YKPasswordViewController.swift in Sources */,
+				64454A7D20A573E700469B4C /* YKCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
