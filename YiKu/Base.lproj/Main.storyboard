@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -225,23 +225,15 @@
             </objects>
             <point key="canvasLocation" x="-199" y="-1364"/>
         </scene>
-        <!--UINavigationController-NKN-rT-7EI-->
+        <!--Home-->
         <scene sceneID="0pv-0p-gY6">
             <objects>
-                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="UINavigationController-NKN-rT-7EI" id="rrT-Eb-Xaz" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="Home" storyboardName="Home" id="rrT-Eb-Xaz" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="TTq-uM-crR"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vr8-Pn-q0y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-995" y="-770"/>
-        </scene>
-        <!--UIViewController-jqP-Pe-Y7H-->
-        <scene sceneID="DuD-3A-eVg">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="UIViewController-jqP-Pe-Y7H" storyboardName="Home" referencedIdentifier="UIViewController-jqP-Pe-Y7H" id="8FW-0t-Ovl" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sao-WZ-cDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-200" y="-770.0149925037482"/>
         </scene>
         <!--UINavigationController-jVy-Nl-v8b-->
         <scene sceneID="ITh-Ox-aCV">
@@ -253,10 +245,10 @@
             </objects>
             <point key="canvasLocation" x="-993" y="-545"/>
         </scene>
-        <!--Camera-->
+        <!--Publish-->
         <scene sceneID="flA-hy-liU">
             <objects>
-                <viewControllerPlaceholder storyboardName="Camera" id="LMA-rX-UPQ" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Publish" id="LMA-rX-UPQ" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="lLh-eX-Ijk"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3oR-Cu-3LX" userLabel="First Responder" sceneMemberID="firstResponder"/>

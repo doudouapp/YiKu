@@ -9,18 +9,24 @@
 import UIKit
 
 class YKUserCenterViewController: UIViewController {
-
+    @IBOutlet weak var nickNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "我"
-        // Do any additional setup after loading the view.
+
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem.init(title: "设置", style: .plain, target: self, action: #selector(buttonSetClick))
+        let user : AVUser = AVUser.current()!
+        nickNameLabel.text = user.username
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+    @objc func buttonSetClick() {
+        
+    }
 
     /*
     // MARK: - Navigation

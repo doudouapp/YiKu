@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NKN-rT-7EI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,23 +13,29 @@
         <!--Home View Controller-->
         <scene sceneID="dGf-Rs-Bjz">
             <objects>
-                <viewController storyboardIdentifier="UIViewController-jqP-Pe-Y7H" id="jqP-Pe-Y7H" customClass="YKHomeViewController" customModule="YiKu" sceneMemberID="viewController">
+                <viewController id="jqP-Pe-Y7H" customClass="YKHomeViewController" customModule="YiKu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cMh-y9-kQ1" customClass="YKHome">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="欢迎进入一库空间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USj-iL-RHj">
-                                <rect key="frame" x="78" y="110" width="219" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nyJ-Ve-R5o">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="w9v-fy-Uwc" firstAttribute="bottom" secondItem="nyJ-Ve-R5o" secondAttribute="bottom" id="2pd-ek-TXe"/>
+                            <constraint firstItem="w9v-fy-Uwc" firstAttribute="trailing" secondItem="nyJ-Ve-R5o" secondAttribute="trailing" id="Od1-Ol-f79"/>
+                            <constraint firstItem="nyJ-Ve-R5o" firstAttribute="top" secondItem="w9v-fy-Uwc" secondAttribute="top" id="Vpz-Rz-m0p"/>
+                            <constraint firstItem="nyJ-Ve-R5o" firstAttribute="leading" secondItem="w9v-fy-Uwc" secondAttribute="leading" id="zdv-pG-72r"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w9v-fy-Uwc"/>
                     </view>
                     <navigationItem key="navigationItem" id="Hzr-v6-zHX"/>
+                    <connections>
+                        <outlet property="tableView" destination="nyJ-Ve-R5o" id="x6B-Zc-Ilu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5I-E8-qIp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -38,7 +44,7 @@
         <!--首页-->
         <scene sceneID="fnD-76-zA1">
             <objects>
-                <navigationController storyboardIdentifier="UINavigationController-NKN-rT-7EI" automaticallyAdjustsScrollViewInsets="NO" id="NKN-rT-7EI" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" id="NKN-rT-7EI" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="首页" id="VKc-SP-yWs"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qo4-js-lcK">
@@ -47,7 +53,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="jqP-Pe-Y7H" kind="relationship" relationship="rootViewController" id="0AF-rk-ZGX"/>
+                        <segue destination="jqP-Pe-Y7H" kind="relationship" relationship="rootViewController" id="d6u-I9-7a3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VfI-IV-NM6" userLabel="First Responder" sceneMemberID="firstResponder"/>

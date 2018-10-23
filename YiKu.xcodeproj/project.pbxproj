@@ -20,8 +20,10 @@
 		16A6404C206A07B0000A5B91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16A6404A206A07B0000A5B91 /* LaunchScreen.storyboard */; };
 		16A64057206A07B1000A5B91 /* YiKuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A64056206A07B1000A5B91 /* YiKuTests.swift */; };
 		16A64062206A07B1000A5B91 /* YiKuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A64061206A07B1000A5B91 /* YiKuUITests.swift */; };
-		64454A7B20A5735600469B4C /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64454A7A20A5735600469B4C /* Camera.storyboard */; };
-		64454A7D20A573E700469B4C /* YKCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64454A7C20A573E700469B4C /* YKCameraViewController.swift */; };
+		64454A7B20A5735600469B4C /* Publish.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64454A7A20A5735600469B4C /* Publish.storyboard */; };
+		6477247320DA4BE20000D1C1 /* YKPublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6477247220DA4BE20000D1C1 /* YKPublishViewController.swift */; };
+		648C85B920DA2AF4007019C3 /* YKHomeViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C85B820DA2AF4007019C3 /* YKHomeViewCell.swift */; };
+		648C85BD20DA397A007019C3 /* YKPostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648C85BC20DA397A007019C3 /* YKPostModel.swift */; };
 		E24F33541D2DCB0CF164CFF6 /* Pods_YiKu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBA1EF03F29A770418D73C87 /* Pods_YiKu.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,8 +65,10 @@
 		16A64061206A07B1000A5B91 /* YiKuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YiKuUITests.swift; sourceTree = "<group>"; };
 		16A64063206A07B1000A5B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16A6406F206A10C9000A5B91 /* YiKu-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YiKu-Bridging-Header.h"; sourceTree = "<group>"; };
-		64454A7A20A5735600469B4C /* Camera.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
-		64454A7C20A573E700469B4C /* YKCameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKCameraViewController.swift; sourceTree = "<group>"; };
+		64454A7A20A5735600469B4C /* Publish.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Publish.storyboard; sourceTree = "<group>"; };
+		6477247220DA4BE20000D1C1 /* YKPublishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YKPublishViewController.swift; sourceTree = "<group>"; };
+		648C85B820DA2AF4007019C3 /* YKHomeViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKHomeViewCell.swift; sourceTree = "<group>"; };
+		648C85BC20DA397A007019C3 /* YKPostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YKPostModel.swift; sourceTree = "<group>"; };
 		D29461077CCCAFC6FEB33656 /* Pods-YiKu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiKu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YiKu/Pods-YiKu.debug.xcconfig"; sourceTree = "<group>"; };
 		D619FCFD7FD62F7C2171B0A3 /* Pods-YiKu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YiKu.release.xcconfig"; path = "Pods/Target Support Files/Pods-YiKu/Pods-YiKu.release.xcconfig"; sourceTree = "<group>"; };
 		FBA1EF03F29A770418D73C87 /* Pods_YiKu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YiKu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +122,8 @@
 		169F8FA72073409B00F0AC42 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				648C85BB20DA395F007019C3 /* Models */,
+				648C85B720DA2AB5007019C3 /* Views */,
 				169F8FA8207340C900F0AC42 /* Home.storyboard */,
 				169F8FAC2073415500F0AC42 /* YKHomeViewController.swift */,
 			);
@@ -149,7 +155,7 @@
 		16A64040206A07B0000A5B91 /* YiKu */ = {
 			isa = PBXGroup;
 			children = (
-				64454A7520A56F2400469B4C /* Camera */,
+				64454A7520A56F2400469B4C /* Publish */,
 				16088C0F206B57C500E8A7D2 /* Login */,
 				169F8FA62073408200F0AC42 /* UserCenter */,
 				169F8FA72073409B00F0AC42 /* Home */,
@@ -181,13 +187,29 @@
 			path = YiKuUITests;
 			sourceTree = "<group>";
 		};
-		64454A7520A56F2400469B4C /* Camera */ = {
+		64454A7520A56F2400469B4C /* Publish */ = {
 			isa = PBXGroup;
 			children = (
-				64454A7A20A5735600469B4C /* Camera.storyboard */,
-				64454A7C20A573E700469B4C /* YKCameraViewController.swift */,
+				6477247220DA4BE20000D1C1 /* YKPublishViewController.swift */,
+				64454A7A20A5735600469B4C /* Publish.storyboard */,
 			);
-			path = Camera;
+			path = Publish;
+			sourceTree = "<group>";
+		};
+		648C85B720DA2AB5007019C3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				648C85B820DA2AF4007019C3 /* YKHomeViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		648C85BB20DA395F007019C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				648C85BC20DA397A007019C3 /* YKPostModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		786ACF7BCAFB35A9EB08BF35 /* Pods */ = {
@@ -319,7 +341,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				169F8FAB2073410300F0AC42 /* UserCenter.storyboard in Resources */,
-				64454A7B20A5735600469B4C /* Camera.storyboard in Resources */,
+				64454A7B20A5735600469B4C /* Publish.storyboard in Resources */,
 				16A6404C206A07B0000A5B91 /* LaunchScreen.storyboard in Resources */,
 				16A64049206A07B0000A5B91 /* Assets.xcassets in Resources */,
 				16A64047206A07B0000A5B91 /* Main.storyboard in Resources */,
@@ -406,11 +428,13 @@
 			files = (
 				169F8FAF2073425200F0AC42 /* YKUserCenterViewController.swift in Sources */,
 				16088C13206B580300E8A7D2 /* YKSignUpViewController.swift in Sources */,
+				648C85BD20DA397A007019C3 /* YKPostModel.swift in Sources */,
 				16088C11206B57F500E8A7D2 /* YKLoginViewController.swift in Sources */,
+				6477247320DA4BE20000D1C1 /* YKPublishViewController.swift in Sources */,
 				16A64042206A07B0000A5B91 /* AppDelegate.swift in Sources */,
 				169F8FAD2073415500F0AC42 /* YKHomeViewController.swift in Sources */,
 				16088C15206B586900E8A7D2 /* YKPasswordViewController.swift in Sources */,
-				64454A7D20A573E700469B4C /* YKCameraViewController.swift in Sources */,
+				648C85B920DA2AF4007019C3 /* YKHomeViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
